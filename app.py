@@ -4,34 +4,6 @@ import plotly_express as px
 
 car_data = pd.read_csv('vehicles_us.csv')
 
-'''
-Aqui nesses comentários, deixo parte do código que seria utilizado para execução do site usando botões;
-No caso, utilizei a caixa de seleção.
-
-hist_button = st.button('Criar histograma') # criar um botão
-     
-if hist_button: # se o botão for clicado
-    # escrever uma mensagem
-    st.write('Criando um histograma para o conjunto de dados de anúncios de vendas de carros')
-         
-    # criar um histograma
-    fig_hist = px.histogram(car_data, x="odometer")
-     
-    # exibir um gráfico Plotly interativo
-    st.plotly_chart(fig_hist, use_container_width=True)
-
-scatter_button = st.button('Criar gráfico de dispersão') # criar um botão
-     
-if scatter_button: # se o botão for clicado
-    # escrever uma mensagem
-    st.write('Criando um gráfico de dispersão para o conjunto de dados de anúncios de vendas de carros')
-         
-    # criar um histograma
-    fig_scatter = px.scatter(car_data, x="odometer", y="price")
-     
-    # exibir um gráfico Plotly interativo
-    st.plotly_chart(fig_scatter, use_container_width=True)
-'''
 # cabeçalho do nosso site
 st.header('Bem vindo! Aqui neste site você terá acesso as informações de distribuição da quantidade de carros disponíveis no nosso conjunto com base em sua distância percorrida. Além disso, poderá observar de maneira gráfica como isso influencia no preço de cada um deles.')
 
